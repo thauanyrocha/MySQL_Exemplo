@@ -16,44 +16,30 @@ namespace MySQL.Controllers
             return View();
         }
 
-       
+
         public ActionResult Create()
         {
             return View();
         }
 
-     
+
         [HttpPost]
-        public ActionResult Create(Usuario collection)
+        public ActionResult Create(Usuario dadosQueVemTela)
         {
-            try
-            {
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+            return RedirectToAction("Index");
         }
 
-       
+
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-      
+
         [HttpPost]
-        public ActionResult Edit(int id, Usuario dadosTela)
+        public ActionResult Edit(int id, Usuario dadosQueVemTela)
         {
-            try
-            {
-                return RedirectToAction("index");
-            }
-            catch
-            {
-                return View();
-            }
+            return RedirectToAction("index");
         }
 
         // GET: UsuariosController/Delete/5
@@ -62,6 +48,6 @@ namespace MySQL.Controllers
             return View();
         }
 
-      
+
     }
 }
